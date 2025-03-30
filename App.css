@@ -1,0 +1,60 @@
+.PlanetBG{
+  background-image: url('spacebg2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color:aliceblue;
+}
+.CustomPlanet{
+  display:block;
+  width: 200px;
+  padding: 20px;
+  box-shadow: 0px 18px 36px -18px inset;
+}
+
+.About{
+  display:block;
+  color:aliceblue;
+  padding: 30px;
+  width: 200px;
+  animation: fadeIn 2s;
+  opacity:1;
+}
+@keyframes fadeIn{
+  from
+  {
+    opacity:0;
+  }
+}
+.Venus{
+  --d:300px;
+  width: var(--d);
+  height:var(--d);
+  display: inline-block;
+  margin:5px;
+  border-radius: 50%;
+  box-shadow: -20px -20px 50px 2px #000 inset, 0 0 20px 2px #000;
+  background:
+  url("venus.png")
+  0/auto 100%;
+  animation: spin 3s linear infinite;
+}
+.Mars{
+  --d:300px;
+  width: var(--d);
+  height:var(--d);
+  display: inline-block;
+  margin:5px;
+  border-radius: 50%;
+  box-shadow: -20px -20px 50px 2px #000 inset, 0 0 20px 2px #000;
+  background:
+    url("mars.png")
+    0/auto 100%;
+    animation: spin 3s linear infinite;
+  
+}
+@keyframes spin{
+  to{
+    background-position: 200% 0;
+  }
+}
