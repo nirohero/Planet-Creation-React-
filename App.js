@@ -1,7 +1,16 @@
 import './App.css';
 import {useState} from 'react';
 import ReactDOM from 'react-dom/client';
- 
+
+function LineOne(){
+  return(
+    <>
+    <div className = "firstV">
+    </div>
+    {LineOne}
+    </>
+  )
+}
 function PlanetForm(){
   const [name, setName] = useState('');
   const [color, setColor] = useState('');
@@ -15,6 +24,7 @@ function PlanetForm(){
     <>
     <div className = "PlanetBG">
     <form onSubmit={handleSubmit}>
+
       <label> Enter your planet's name:
         <input 
         value = {name}
@@ -24,6 +34,7 @@ function PlanetForm(){
         name = "name"
         required
         />
+        <LineOne/>
         <br/>
       </label>
       <label>Enter the color of your planet:
@@ -35,6 +46,7 @@ function PlanetForm(){
         color = "color"
         required
         />
+        <LineOne/>
         <br/>
         </label>
         <label>Is your planet close to the sun
@@ -42,6 +54,7 @@ function PlanetForm(){
           <option value = "yes" required>Yes</option>
           <option value = "no" required>No</option>
         </select>
+        <LineOne/>
         </label>
 
       <input type ="submit"/>
@@ -71,6 +84,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<PlanetForm/>);
 function App() {
   <>
+  <LineOne/>
   <PlanetForm/>
   </>
 }
