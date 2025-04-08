@@ -11,6 +11,16 @@ function LineOne(){
     </>
   )
 }
+function rCircle(){
+  return(
+    <>
+    <div className="rotation">
+    <div className="circle">
+    </div>
+    </div>
+    </>
+  )
+}
 function PlanetForm(){
   const [name, setName] = useState('');
   const [color, setColor] = useState('');
@@ -84,6 +94,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<PlanetForm/>);
 function App() {
   <>
+  <rCircle/>
   <LineOne/>
   <PlanetForm/>
   </>
