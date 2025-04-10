@@ -7,7 +7,6 @@ function LineOne(){
     <>
     <div className = "firstV">
     </div>
-    {LineOne}
     </>
   )
 }
@@ -34,7 +33,6 @@ function PlanetForm(){
     <>
     <div className = "PlanetBG">
     <form onSubmit={handleSubmit}>
-
       <label> Enter your planet's name:
         <input 
         value = {name}
@@ -66,7 +64,6 @@ function PlanetForm(){
         </select>
         <LineOne/>
         </label>
-
       <input type ="submit"/>
     </form>
     <h2>Your planet's information will appear below:</h2>
@@ -94,9 +91,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<PlanetForm/>);
 function App() {
   <>
-  <rCircle/>
   <LineOne/>
   <PlanetForm/>
+  <rCircle/>
   </>
 }
 export default App;
