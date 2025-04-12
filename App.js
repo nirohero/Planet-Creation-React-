@@ -10,7 +10,15 @@ function LineOne(){
     </>
   )
 }
-function rCircle(){
+function TopBar(){
+  return(
+    <>
+    <div className="Top">
+    </div>
+    </>
+  )
+}
+function RCircle(){
   return(
     <>
     <div className="rotation">
@@ -32,6 +40,8 @@ function PlanetForm(){
   return(
     <>
     <div className = "PlanetBG">
+    <TopBar/>
+    <RCircle/>
     <form onSubmit={handleSubmit}>
       <label> Enter your planet's name:
         <input 
@@ -91,9 +101,10 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<PlanetForm/>);
 function App() {
   <>
+  <TopBar/>
+  <RCircle/>
   <LineOne/>
   <PlanetForm/>
-  <rCircle/>
   </>
 }
 export default App;
