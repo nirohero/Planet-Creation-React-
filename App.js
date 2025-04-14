@@ -14,6 +14,7 @@ function TopBar(){
   return(
     <>
     <div className="Top">
+      <h3>Create your own planet!</h3>
     </div>
     </>
   )
@@ -76,7 +77,6 @@ function PlanetForm(){
         </label>
       <input type ="submit"/>
     </form>
-    <h2>Your planet's information will appear below:</h2>
     <div className = "CustomPlanet">
       <p>Planet name: {name} </p>
       <p>Planet color: {color}</p>
@@ -101,9 +101,6 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<PlanetForm/>);
 function App() {
   <>
-  <TopBar/>
-  <RCircle/>
-  <LineOne/>
   <PlanetForm/>
   </>
 }
