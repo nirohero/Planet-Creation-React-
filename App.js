@@ -77,6 +77,9 @@ function PlanetForm(){
         </label>
       <input type ="submit"/>
     </form>
+    <br/>
+    <br/>
+    <br/>
     <div className = "CustomPlanet">
       <p>Planet name: {name} </p>
       <p>Planet color: {color}</p>
