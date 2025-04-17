@@ -10,11 +10,20 @@ function LineOne(){
     </>
   )
 }
+function RemovePlanet(){
+  //if user is not happy with current planet they can remove it
+  return(
+    <>
+
+    </>
+  )
+}
 function TopBar(){
   return(
     <>
     <div className="Top">
-      <h3>Create your own planet!</h3>
+      <h2>Create your own planet!</h2>
+      <h4>On this website you have the opportunity to create a planet</h4>
     </div>
     </>
   )
