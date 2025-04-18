@@ -14,7 +14,9 @@ function RemovePlanet(){
   //if user is not happy with current planet they can remove it
   return(
     <>
-
+    <div className ="RPlanet">
+    <button></button>
+    </div>
     </>
   )
 }
@@ -23,7 +25,7 @@ function TopBar(){
     <>
     <div className="Top">
       <h2>Create your own planet!</h2>
-      <h4>On this website you have the opportunity to create a planet</h4>
+      <h6>On this website you have the opportunity to create a planet</h6>
     </div>
     </>
   )
