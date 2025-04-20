@@ -15,7 +15,7 @@ function RemovePlanet(){
   return(
     <>
     <div className ="RPlanet">
-    <button></button>
+    <button></button> 
     </div>
     </>
   )
@@ -97,8 +97,6 @@ function PlanetForm(){
       <p>Planet close to the sun: {selected}</p>
     </div>
     <div className = "About">
-    <p>In this website we get to create a planet and implement rings and moons to it a well! It's inspired off a project I did back in college.</p>
-    <p>Some interesting facts about <b>space</b>: Every solar system has a source of prominence, in our case it's the Sun!</p>
     </div>
     <div className ="Venus">
       <p> <h2>Venus</h2> is the hottest planet in the solar system, you would think it would be Mercury since it's the closest to the sun but in truth Venus is hotter due to it's greenhouse gas effect.</p>
